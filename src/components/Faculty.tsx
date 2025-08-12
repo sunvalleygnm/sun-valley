@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Faculty(): JSX.Element {
+export default function Faculty() {
   return (
     <section id="faculty" className="py-24 bg-gradient-to-br from-[#2c3e50] to-[#1a252f] text-white relative overflow-hidden">
       {/* Background Pattern */}

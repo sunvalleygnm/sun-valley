@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Facilities(): JSX.Element {
+export default function Facilities() {
   return (
     <section id="facilities" className="py-24 bg-white relative overflow-hidden">
       {/* Background Pattern */}

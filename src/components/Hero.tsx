@@ -61,7 +61,7 @@ export default function Hero() {
                 <div className="text-center">
                   <div className="w-3 sm:w-4 h-3 sm:h-4 bg-[#16a085] rounded-full mx-auto mb-2"></div>
                   <span className="text-[#2c3e50] font-semibold text-xs block">Approved by</span>
-                  <span className="text-[#6c757d] text-xs">Assam Nurses' Midwives' Council</span>
+                  <span className="text-[#6c757d] text-xs">Assam Nurses&#39; Midwives&#39; Council</span>
                 </div>
               </div>
               <div className="flex items-center justify-center bg-white p-4 sm:p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">

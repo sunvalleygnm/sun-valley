@@ -1,4 +1,4 @@
-export default function Fab(): JSX.Element {
+export default function Fab() {
   return (
     <div className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50">
       <a

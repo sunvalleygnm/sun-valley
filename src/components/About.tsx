@@ -1,4 +1,4 @@
-export default function About(): JSX.Element {
+export default function About() {
   return (
     <section id="about" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#f8f9fa] to-white relative overflow-hidden">
       {/* Background Pattern */}
@@ -18,7 +18,7 @@ export default function About(): JSX.Element {
             About <span className="text-[#e74c3c]">Sun Valley</span> GNM
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-[#6c757d] max-w-4xl mx-auto leading-relaxed px-4 sm:px-0">
-            Committed to excellence in nursing education since 2021, preparing compassionate healthcare professionals for tomorrow's challenges.
+            Committed to excellence in nursing education since 2021, preparing compassionate healthcare professionals for tomorrow&#39;s challenges.
           </p>
         </div>
 

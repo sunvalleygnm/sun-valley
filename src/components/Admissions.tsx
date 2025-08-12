@@ -1,6 +1,6 @@
-import Image from "next/image";
 
-export default function Admissions(): JSX.Element {
+
+export default function Admissions() {
   return (
     <section id="admissions" className="py-24 bg-gradient-to-br from-[#f8f9fa] to-white relative overflow-hidden">
       {/* Background Pattern */}

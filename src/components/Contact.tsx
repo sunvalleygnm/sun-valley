@@ -1,4 +1,4 @@
-export default function Contact(): JSX.Element {
+export default function Contact() {
   return (
     <section id="contact" className="py-20 bg-[#2c3e50] text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

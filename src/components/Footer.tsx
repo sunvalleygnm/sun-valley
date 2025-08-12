@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Footer(): JSX.Element {
+export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-[#1a252f] to-[#2c3e50] text-white py-12 sm:py-16 relative overflow-hidden">
       {/* Background Pattern */}
@@ -20,7 +20,7 @@ export default function Footer(): JSX.Element {
             </p>
             <div className="bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-xl border border-white/20">
               <div className="text-xs sm:text-sm text-gray-300 space-y-1">
-                <p className="flex items-center"><span className="text-[#16a085] mr-2 flex-shrink-0">✓</span> Approved by: Assam Nurses' Midwives' Council</p>
+                <p className="flex items-center"><span className="text-[#16a085] mr-2 flex-shrink-0">✓</span> Approved by: Assam Nurses&#39; Midwives&#39; Council</p>
                 <p className="flex items-center"><span className="text-[#16a085] mr-2 flex-shrink-0">✓</span> Recognized by: Govt. of Assam</p>
                 <p className="flex items-center"><span className="text-[#16a085] mr-2 flex-shrink-0">✓</span> Established: 2021</p>
               </div>
