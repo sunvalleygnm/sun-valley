@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 const Hero = dynamic(() => import("@/components/Hero"), { ssr: true });
 const About = dynamic(() => import("@/components/About"), { ssr: true });
 const Programs = dynamic(() => import("@/components/Programs"), { ssr: true });
+const Highlights = dynamic(() => import("@/components/Highlights"), { ssr: true });
 const Faculty = dynamic(() => import("@/components/Faculty"), { ssr: true });
 const Admissions = dynamic(() => import("@/components/Admissions"), { ssr: true });
 const Facilities = dynamic(() => import("@/components/Facilities"), { ssr: true });
@@ -29,6 +30,9 @@ export default function Home() {
 
       {/* Programs Section */}
       <Programs />
+
+      {/* Highlights from Campus */}
+      <Highlights />
 
       {/* Faculty Section */}
       <Faculty />
