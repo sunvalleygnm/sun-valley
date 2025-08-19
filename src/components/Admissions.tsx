@@ -29,11 +29,11 @@ export default function Admissions() {
             <div className="space-y-4">
               <div className="border-l-4 border-[#e74c3c] pl-4">
                 <h4 className="font-semibold text-[#2c3e50]">Educational Qualification</h4>
-                <p className="text-[#6c757d]">10+2 or equivalent with Physics, Chemistry, Biology and English</p>
+                <p className="text-[#6c757d]">Any Stream preferably Science</p>
               </div>
               <div className="border-l-4 border-[#16a085] pl-4">
                 <h4 className="font-semibold text-[#2c3e50]">Minimum Marks</h4>
-                <p className="text-[#6c757d]">45% aggregate in 10+2 (40% for reserved categories)</p>
+                <p className="text-[#6c757d]">40% aggregate in 10+2 (40% for reserved categories)</p>
               </div>
               <div className="border-l-4 border-[#2c3e50] pl-4">
                 <h4 className="font-semibold text-[#2c3e50]">Age Limit</h4>
@@ -90,10 +90,10 @@ export default function Admissions() {
             <div className="mt-8 p-4 bg-[#f8f9fa] rounded-lg">
               <h4 className="font-semibold text-[#2c3e50] mb-2">Important Dates</h4>
               <div className="text-[#6c757d] text-sm space-y-1">
-                <p>• Application Start: March 2024</p>
-                <p>• Application Deadline: May 2024</p>
-                <p>• Entrance Test: June 2024</p>
-                <p>• Classes Begin: August 2024</p>
+                <p>• Application Start: March 2025</p>
+                <p>• Application Deadline: May 2025</p>
+                <p>• Entrance Test: June 2025</p>
+                <p>• Classes Begin: August 2025</p>
               </div>
             </div>
           </div>

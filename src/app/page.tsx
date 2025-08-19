@@ -129,7 +129,9 @@ export default function Home() {
                   </div>
                   <div className="text-gray-300">
                     <p className="font-medium text-sm sm:text-base">Email</p>
-                    <p className="text-xs sm:text-sm">info@sunvalleygnm.edu.in</p>
+                    <p className="text-xs sm:text-sm">
+                      gnmschoolsunvalley@gmail.com
+                    </p>
                   </div>
                 </div>
               </div>
@@ -139,7 +141,7 @@ export default function Home() {
           <div className="border-t border-white/20 mt-8 sm:mt-12 pt-6 sm:pt-8">
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
               <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
-                © 2024 Sun Valley GNM School of Nursing. All rights reserved.
+                © 2026 Sun Valley GNM School of Nursing. All rights reserved.
               </p>
               <div className="flex flex-wrap justify-center sm:justify-end space-x-4 sm:space-x-6">
                 <a href="#" className="text-gray-400 hover:text-[#e74c3c] transition-colors text-xs sm:text-sm">Privacy Policy</a>

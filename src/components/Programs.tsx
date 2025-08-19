@@ -40,7 +40,7 @@ export default function Programs() {
               <div className="space-y-2 sm:space-y-3">
                 <div className="flex items-center text-[#6c757d] text-sm sm:text-base">
                   <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#e74c3c] rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
-                  <span>Duration: 3.5 years</span>
+                  <span>Duration: 3 years</span>
                 </div>
                 <div className="flex items-center text-[#6c757d] text-sm sm:text-base">
                   <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#e74c3c] rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
@@ -48,7 +48,7 @@ export default function Programs() {
                 </div>
                 <div className="flex items-center text-[#6c757d] text-sm sm:text-base">
                   <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#e74c3c] rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>
-                  <span>Eligibility: 10+2 with Science</span>
+                  <span>Eligibility: Any stream preferably Science</span>
                 </div>
                 <div className="flex items-center text-[#6c757d] text-sm sm:text-base">
                   <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#e74c3c] rounded-full mr-2 sm:mr-3 flex-shrink-0"></div>

@@ -38,8 +38,7 @@ export default function Contact() {
             </div>
             <h3 className="text-xl font-bold mb-2">Email</h3>
             <p className="opacity-90">
-              info@sunvalleygnm.edu.in<br />
-              admissions@sunvalleygnm.edu.in
+              gnmschoolsunvalley@gmail.com
             </p>
           </div>
         </div>
