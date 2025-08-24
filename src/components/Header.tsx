@@ -19,7 +19,7 @@ export default function Header() {
                 width={240}
                 height={240}
                 sizes="(max-width: 640px) 4rem, (max-width: 768px) 3rem, (max-width: 1024px) 4rem, 14rem"
-                className="w-32 h-32 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-56 lg:h-56"
+                className="w-56 h-56"
                 priority
               />
             </div>
