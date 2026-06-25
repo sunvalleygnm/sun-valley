@@ -1,99 +1,75 @@
+import Image from "next/image";
 
+const dates = [
+  ["Application start", "10th April 2026"],
+  ["Application deadline", "30th May 2026"],
+  ["Entrance exam", "28th June 2026"],
+];
+
+const benefits = [
+  "Affordable fee structure",
+  "Both male and female students can apply",
+  "100% placement assistance",
+  "Own parent hospital support",
+];
 
 export default function Admissions() {
   return (
-    <section id="admissions" className="py-24 bg-gradient-to-br from-[#f8f9fa] to-white relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-20 w-36 h-36 bg-[#2c3e50] rounded-full"></div>
-        <div className="absolute bottom-20 left-20 w-28 h-28 bg-[#e74c3c] rounded-full"></div>
-      </div>
+    <section id="admissions" className="section-shell bg-white">
+      <div className="section-inner">
+        <div className="grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
+          <div className="lg:sticky lg:top-28">
+            <div className="eyebrow">Admission open</div>
+            <h2 className="section-title">GNM admission for 2026-27 is open.</h2>
+            <p className="section-copy">
+              CEE 2026 is mandatory for enrolment in the GNM course, conducted by SSHUS, Government of Assam.
+            </p>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center bg-[#2c3e50]/10 text-[#2c3e50] px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <span className="w-2 h-2 bg-[#2c3e50] rounded-full mr-2"></span>
-            Join Our Community
-          </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-[#2c3e50] mb-6">
-            <span className="text-[#e74c3c]">Admissions</span> Open
-          </h2>
-          <p className="text-xl text-[#6c757d] max-w-4xl mx-auto leading-relaxed">
-            Join our nursing program and start your journey towards a rewarding healthcare career. Transform your passion for caring into professional excellence.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-[#2c3e50] mb-6">Eligibility Criteria</h3>
-            <div className="space-y-4">
-              <div className="border-l-4 border-[#e74c3c] pl-4">
-                <h4 className="font-semibold text-[#2c3e50]">Educational Qualification</h4>
-                <p className="text-[#6c757d]">Any Stream preferably Science</p>
-              </div>
-              <div className="border-l-4 border-[#16a085] pl-4">
-                <h4 className="font-semibold text-[#2c3e50]">Minimum Marks</h4>
-                <p className="text-[#6c757d]">40% aggregate in 10+2 (40% for reserved categories)</p>
-              </div>
-              <div className="border-l-4 border-[#2c3e50] pl-4">
-                <h4 className="font-semibold text-[#2c3e50]">Age Limit</h4>
-                <p className="text-[#6c757d]">17-35 years as on 31st December of admission year</p>
-              </div>
-              <div className="border-l-4 border-[#e74c3c] pl-4">
-                <h4 className="font-semibold text-[#2c3e50]">Medical Fitness</h4>
-                <p className="text-[#6c757d]">Medical fitness certificate required</p>
-              </div>
+            <div className="mt-8 overflow-hidden rounded-lg border border-[#071d2b]/10 bg-[#f7fbfb]">
+              <Image
+                src="/admission-2026.jpeg"
+                alt="Admission open poster for Sun Valley GNM School of Nursing 2026-27"
+                width={1080}
+                height={1600}
+                sizes="(max-width: 1024px) 92vw, 34vw"
+                className="w-full object-contain"
+              />
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-[#2c3e50] mb-6">Application Process</h3>
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="w-8 h-8 bg-[#e74c3c] text-white rounded-full flex items-center justify-center mr-4 mt-1">
-                  <span className="text-sm font-bold">1</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-[#2c3e50]">Submit Application</h4>
-                  <p className="text-[#6c757d]">Fill out the online application form with required documents</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-8 h-8 bg-[#16a085] text-white rounded-full flex items-center justify-center mr-4 mt-1">
-                  <span className="text-sm font-bold">2</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-[#2c3e50]">Entrance Test</h4>
-                  <p className="text-[#6c757d]">Appear for the entrance examination and interview</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-8 h-8 bg-[#2c3e50] text-white rounded-full flex items-center justify-center mr-4 mt-1">
-                  <span className="text-sm font-bold">3</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-[#2c3e50]">Merit List</h4>
-                  <p className="text-[#6c757d]">Check merit list and counseling schedule</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-8 h-8 bg-[#e74c3c] text-white rounded-full flex items-center justify-center mr-4 mt-1">
-                  <span className="text-sm font-bold">4</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-[#2c3e50]">Admission</h4>
-                  <p className="text-[#6c757d]">Complete admission formalities and fee payment</p>
-                </div>
+          <div className="grid gap-5">
+            <div className="info-card p-6">
+              <p className="text-sm font-black uppercase tracking-[0.14em] text-[#123bd3]">Important dates</p>
+              <div className="mt-5 grid gap-3">
+                {dates.map(([label, value]) => (
+                  <div key={label} className="flex items-center justify-between gap-4 rounded-md bg-[#edfafa] p-4">
+                    <span className="text-sm font-black text-[#486278]">{label}</span>
+                    <span className="text-right text-lg font-black text-[#e42332]">{value}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <div className="mt-8 p-4 bg-[#f8f9fa] rounded-lg">
-              <h4 className="font-semibold text-[#2c3e50] mb-2">Important Dates</h4>
-              <div className="text-[#6c757d] text-sm space-y-1">
-                <p>• Application Start: March 2025</p>
-                <p>• Application Deadline: May 2025</p>
-                <p>• Entrance Test: June 2025</p>
-                <p>• Classes Begin: August 2025</p>
+            <div className="grid gap-5 md:grid-cols-2">
+              <div className="info-card p-6">
+                <h3 className="text-2xl font-black text-[#071d2b]">Eligibility</h3>
+                <p className="mt-4 text-[#486278]">10+2 with any stream. Students should be prepared for the Common Entrance Examination 2026.</p>
+              </div>
+              <div className="info-card p-6">
+                <h3 className="text-2xl font-black text-[#071d2b]">Course</h3>
+                <p className="mt-4 text-[#486278]">GNM is a 3 years course with classroom learning, clinical training, and career preparation.</p>
+              </div>
+            </div>
+
+            <div className="info-card p-6">
+              <h3 className="text-2xl font-black text-[#071d2b]">Why choose Sun Valley?</h3>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                {benefits.map((item) => (
+                  <div key={item} className="flex gap-3 rounded-md border border-[#071d2b]/10 p-4">
+                    <span className="mt-2 h-2 w-2 flex-none rounded-full bg-[#0f9f9a]" />
+                    <span className="text-sm font-bold text-[#486278]">{item}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -102,4 +78,3 @@ export default function Admissions() {
     </section>
   );
 }
-

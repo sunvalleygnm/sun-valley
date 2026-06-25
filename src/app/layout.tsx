@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Sun Valley GNM School of Nursing | Premier Nursing Education in Assam",
-  description: "Sun Valley GNM School of Nursing - Approved by Assam Nurses' Midwives' Council & Recognized by Govt. of Assam. Established 2021. Quality nursing education in Guwahati.",
+  description: "Sun Valley GNM School of Nursing - Recognized by Indian Nursing Council and Govt. of Assam, and approved by Assam Nurses' Midwives' Council. Located above Sun Valley Hospital, GS Rd, Mathura Nagar, Bormotoria, Guwahati.",
   keywords: "nursing school, GNM, Assam, Guwahati, nursing education, healthcare, medical training",
 };
 

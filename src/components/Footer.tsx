@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-xl border border-white/20">
               <div className="text-xs sm:text-sm text-gray-300 space-y-1">
                 <p className="flex items-center"><span className="text-[#16a085] mr-2 flex-shrink-0">✓</span> Approved by: Assam Nurses&#39; Midwives&#39; Council</p>
-                <p className="flex items-center"><span className="text-[#16a085] mr-2 flex-shrink-0">✓</span> Recognized by: Govt. of Assam</p>
+                <p className="flex items-center"><span className="text-[#16a085] mr-2 flex-shrink-0">✓</span> Recognized by: Indian Nursing Council & Govt. of Assam</p>
                 <p className="flex items-center"><span className="text-[#16a085] mr-2 flex-shrink-0">✓</span> Established: 2021</p>
               </div>
             </div>
@@ -64,10 +64,10 @@ export default function Footer() {
                 <div className="w-6 sm:w-8 h-6 sm:h-8 bg-[#e74c3c]/20 rounded-lg flex items-center justify-center mr-2 sm:mr-3 mt-1 flex-shrink-0">
                   <span className="text-[#e74c3c] text-xs sm:text-sm">📍</span>
                 </div>
-                <div className="text-gray-300">
-                  <p className="font-medium text-sm sm:text-base">Address</p>
-                  <p className="text-xs sm:text-sm">G.T. Road, Guwahati<br />Assam, India - 781001</p>
-                </div>
+                  <div className="text-gray-300">
+                    <p className="font-medium text-sm sm:text-base">Address</p>
+                    <p className="text-xs sm:text-sm">Above Sun Valley Hospital, GS Rd, Mathura Nagar, Bormotoria<br />Guwahati, Assam 781006, India</p>
+                  </div>
               </div>
               <div className="flex items-start">
                 <div className="w-6 sm:w-8 h-6 sm:h-8 bg-[#16a085]/20 rounded-lg flex items-center justify-center mr-2 sm:mr-3 mt-1 flex-shrink-0">

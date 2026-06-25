@@ -4,93 +4,87 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+const navItems = [
+  ["About", "#about"],
+  ["Course", "#programs"],
+  ["Campus", "#highlights"],
+  ["Faculty", "#faculty"],
+  ["Facilities", "#facilities"],
+  ["Admissions", "#admissions"],
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 sm:h-18 lg:h-20">
-          <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <Image
-                src="/logo.png"
-                alt="Sun Valley GNM School of Nursing Logo"
-                width={240}
-                height={240}
-                sizes="(max-width: 640px) 4rem, (max-width: 768px) 3rem, (max-width: 1024px) 4rem, 14rem"
-                className="w-56 h-56"
-                priority
-              />
-            </div>
+    <header className="sticky top-0 z-50 border-b border-[#071d2b]/10 bg-white/88 backdrop-blur-xl">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:h-20 lg:px-8">
+        <Link href="#home" className="flex items-center gap-3" onClick={() => setIsMenuOpen(false)}>
+          <Image
+            src="/logo.png"
+            alt="Sun Valley GNM School of Nursing"
+            width={72}
+            height={72}
+            className="h-12 w-12 object-contain lg:h-14 lg:w-14"
+            priority
+          />
+          <div className="leading-tight">
+            <p className="text-sm font-black tracking-tight text-[#071d2b] sm:text-base">Sun Valley GNM</p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#123bd3]">School of Nursing</p>
           </div>
+        </Link>
 
-          {/* Desktop nav */}
-          <div className="hidden lg:block">
-            <div className="ml-6 xl:ml-10 flex items-baseline space-x-1 xl:space-x-2">
-              <Link href="#home" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 px-2 xl:px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-300 relative group">
-                Home
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#e74c3c] group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link href="#about" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 px-2 xl:px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-300 relative group">
-                About
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#e74c3c] group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link href="#programs" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 px-2 xl:px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-300 relative group">
-                Programs
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#e74c3c] group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link href="#faculty" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 px-2 xl:px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-300 relative group">
-                Faculty
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#e74c3c] group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link href="#facilities" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 px-2 xl:px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-300 relative group">
-                Facilities
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#e74c3c] group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link href="#admissions" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 px-2 xl:px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-300 relative group">
-                Admissions
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#e74c3c] group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link href="#contact" className="bg-gradient-to-r from-[#e74c3c] to-[#c0392b] text-white px-3 xl:px-4 py-2 rounded-xl text-xs font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
-                Contact
-              </Link>
-            </div>
-          </div>
-
-          {/* Mobile hamburger */}
-          <div className="lg:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-[#2c3e50] hover:text-[#e74c3c] focus:outline-none focus:text-[#e74c3c] p-2 rounded-lg hover:bg-[#e74c3c]/5 transition-all duration-300"
+        <nav className="hidden items-center gap-1 lg:flex">
+          {navItems.map(([label, href]) => (
+            <Link
+              key={href}
+              href={href}
+              className="rounded-md px-3 py-2 text-sm font-bold text-[#102a43] transition hover:bg-[#dff7f3] hover:text-[#123bd3]"
             >
-              <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
+              {label}
+            </Link>
+          ))}
+          <Link href="#contact" className="ml-2 btn-solid text-sm">
+            Enquire Now
+          </Link>
+        </nav>
+
+        <button
+          type="button"
+          onClick={() => setIsMenuOpen((value) => !value)}
+          className="inline-flex h-11 w-11 items-center justify-center rounded-md border border-[#071d2b]/10 text-[#071d2b] lg:hidden"
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMenuOpen}
+        >
+          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {isMenuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18 18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7h16M4 12h16M4 17h16" />
+            )}
+          </svg>
+        </button>
+      </div>
+
+      {isMenuOpen && (
+        <div className="border-t border-[#071d2b]/10 bg-white px-4 py-3 lg:hidden">
+          <div className="grid gap-1">
+            {navItems.map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setIsMenuOpen(false)}
+                className="rounded-md px-3 py-3 text-sm font-bold text-[#102a43] hover:bg-[#dff7f3]"
+              >
+                {label}
+              </Link>
+            ))}
+            <Link href="#contact" onClick={() => setIsMenuOpen(false)} className="mt-2 btn-solid text-sm">
+              Enquire Now
+            </Link>
           </div>
         </div>
-
-        {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md border-t border-gray-100">
-              <Link href="#home" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 block px-3 sm:px-4 py-2 sm:py-3 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300" onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link href="#about" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 block px-3 sm:px-4 py-2 sm:py-3 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300" onClick={() => setIsMenuOpen(false)}>About</Link>
-              <Link href="#programs" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 block px-3 sm:px-4 py-2 sm:py-3 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300" onClick={() => setIsMenuOpen(false)}>Programs</Link>
-              <Link href="#faculty" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 block px-3 sm:px-4 py-2 sm:py-3 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300" onClick={() => setIsMenuOpen(false)}>Faculty</Link>
-              <Link href="#facilities" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 block px-3 sm:px-4 py-2 sm:py-3 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300" onClick={() => setIsMenuOpen(false)}>Facilities</Link>
-              <Link href="#admissions" className="text-[#2c3e50] hover:text-[#e74c3c] hover:bg-[#e74c3c]/5 block px-3 sm:px-4 py-2 sm:py-3 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300" onClick={() => setIsMenuOpen(false)}>Admissions</Link>
-              <Link href="#contact" className="bg-gradient-to-r from-[#e74c3c] to-[#c0392b] text-white block px-3 sm:px-4 py-2 sm:py-3 rounded-xl text-xs sm:text-sm font-semibold text-center transition-all duration-300" onClick={() => setIsMenuOpen(false)}>Contact</Link>
-            </div>
-          </div>
-        )}
-      </div>
-    </nav>
+      )}
+    </header>
   );
 }
-

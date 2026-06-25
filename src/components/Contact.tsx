@@ -1,61 +1,32 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-[#2c3e50] text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
-          <p className="text-xl max-w-3xl mx-auto opacity-90">
-            Get in touch with us for admissions, inquiries, or any other information.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#e74c3c] rounded-lg flex items-center justify-center mx-auto mb-4">
-              <span className="text-white text-2xl">📍</span>
-            </div>
-            <h3 className="text-xl font-bold mb-2">Address</h3>
-            <p className="opacity-90">
-              G.T. Road, Guwahati<br />
-              Assam, India - 781001
+    <section id="contact" className="section-shell bg-[#071d2b] text-white">
+      <div className="section-inner">
+        <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <div>
+            <div className="eyebrow border-white/15 bg-white/10 text-white">Contact</div>
+            <h2 className="mt-5 text-[clamp(2.1rem,4vw,4.6rem)] font-black leading-none tracking-normal">
+              Start your admission conversation.
+            </h2>
+            <p className="mt-5 text-lg text-white/70">
+              Reach out for admission guidance, course details, CEE preparation questions, or campus visit information.
             </p>
           </div>
 
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#16a085] rounded-lg flex items-center justify-center mx-auto mb-4">
-              <span className="text-white text-2xl">📞</span>
-            </div>
-            <h3 className="text-xl font-bold mb-2">Phone</h3>
-            <p className="opacity-90">
-              +91 98765 43210<br />
-              +91 87654 32109
-            </p>
-          </div>
-
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#e74c3c] rounded-lg flex items-center justify-center mx-auto mb-4">
-              <span className="text-white text-2xl">✉️</span>
-            </div>
-            <h3 className="text-xl font-bold mb-2">Email</h3>
-            <p className="opacity-90">
-              gnmschoolsunvalley@gmail.com
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-16 text-center">
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Ready to Start Your Nursing Career?</h3>
-            <p className="mb-6 opacity-90">
-              Join Sun Valley GNM School of Nursing and become part of the healthcare revolution.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919876543210" className="bg-[#e74c3c] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#c0392b] transition-colors">
-                Call Now
-              </a>
-              <a href="mailto:admissions@sunvalleygnm.edu.in" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#2c3e50] transition-colors">
-                Email Us
-              </a>
+          <div className="grid gap-4 md:grid-cols-2">
+            <a href="tel:+919395894109" className="rounded-lg border border-white/12 bg-white/8 p-6 transition hover:bg-white/12">
+              <p className="text-sm font-black uppercase tracking-[0.14em] text-white/50">Phone</p>
+              <p className="mt-3 text-2xl font-black">93958-94109</p>
+              <p className="text-xl font-black text-white/80">78965-43546</p>
+            </a>
+            <a href="mailto:gnmschoolsunvalley@gmail.com" className="rounded-lg border border-white/12 bg-white/8 p-6 transition hover:bg-white/12">
+              <p className="text-sm font-black uppercase tracking-[0.14em] text-white/50">Email</p>
+              <p className="mt-3 break-words text-lg font-black">gnmschoolsunvalley@gmail.com</p>
+            </a>
+            <div className="rounded-lg border border-white/12 bg-white/8 p-6 md:col-span-2">
+              <p className="text-sm font-black uppercase tracking-[0.14em] text-white/50">Address</p>
+              <p className="mt-3 text-xl font-black">Above Sun Valley Hospital, GS Rd, Mathura Nagar, Bormotoria, Guwahati, Assam 781006, India</p>
+              <p className="mt-2 text-white/65">www.sunvalleynursingschool.in</p>
             </div>
           </div>
         </div>
@@ -63,4 +34,3 @@ export default function Contact() {
     </section>
   );
 }
-
